@@ -101,7 +101,7 @@ const Home = () => {
 
                 <div className='relative mt-12'>
                     <div className='w-full font-bold text-xl flex justify-center py-3 p-3'>Suggestion box😊</div>
-                    <form action="..." method="POST" className="flex flex-col gap-4">
+                    <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-4">
                         <input type="hidden" name="access_key" value="e7ed3c53-b70f-4031-8ae2-58d34c9bf500" />
                         <input type="text" name="name" className="p-2 bg-white border rounded-md" placeholder='Enter your name' required />
                         <input type="email" name="email" className="p-2 bg-white border rounded-md" placeholder='Enter your email' required />
