@@ -54,7 +54,7 @@ const Home = () => {
 
                 <div>
                     <div className='w-full flex flex-wrap gap-5 px-5 justify-center items-center pt-8 pb-8 '>
-                        {Cate.length > 1 ? Cate.map((item) => (
+                        {Cate.length > 0 ? Cate.map((item) => (
                             <Card key={item.id} name={item.food_name} image={item.food_image} price={item.price} id={item.id} type={item.food_type} />
                         )) : <div className='text-2xl text-gray-700'>No dish found</div>}
 
