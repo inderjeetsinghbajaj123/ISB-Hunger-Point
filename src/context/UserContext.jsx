@@ -1,15 +1,15 @@
-import React, { createContext, useState } from 'react'
-import { food_items } from '../food'
-export const datacontext = createContext()
+import React, { createContext, useState } from 'react';
+import { food_items } from '../food';
 
-function Usercontext({ children }) {
-    const [Cate, setCate] = useState(food_items)
-    const [input, setinput] = useState("")
+export const datacontext = createContext();
 
-    const [show, setshow] = useState()
-      const [email, setemail] = useState()
+function UserContext({ children }) {
+    const [Cate, setCate] = useState(food_items);
+    const [input, setinput] = useState("");
+    const [show, setshow] = useState();
+    const [email, setemail] = useState();
 
-    let data = {
+    const data = {
         input,
         setinput,
         Cate,
@@ -18,15 +18,13 @@ function Usercontext({ children }) {
         setshow,
         email,
         setemail
-    }
+    };
 
     return (
-        
-            <datacontext.Provider value={data}>
-                {children}
-            </datacontext.Provider>
-        
-    )
+        <datacontext.Provider value={data}>
+            {children}
+        </datacontext.Provider>
+    );
 }
 
-export default Usercontext
+export default UserContext;
