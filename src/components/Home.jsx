@@ -3,11 +3,12 @@ import Navbar from './Navbar'
 import Categories from '../Categories'
 import Card from './Card'
 import { food_items } from '../food'
-import { datacontext } from '../context/Usercontext'
+import { datacontext } from '../context/UserContext'
 import { RxCross1 } from "react-icons/rx";
 import Card2 from './Card2'
 import { useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
+
 
 const Home = () => {
     const { Cate, setCate, input, show, setshow, email, setemail } = useContext(datacontext);
