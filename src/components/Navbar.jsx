@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { IoFastFoodSharp } from "react-icons/io5";
-import { datacontext } from '../context/Usercontext';
+import { datacontext } from "../context/UserContext";
 import { food_items } from '../food';
 import { useSelector } from 'react-redux';
 
